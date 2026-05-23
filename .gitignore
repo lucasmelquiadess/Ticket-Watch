@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/*.json
+!.gitkeep
+.env
+.DS_Store
+npm-debug.log*
+logs/
+playwright-report/
+test-results/
+admin.txt

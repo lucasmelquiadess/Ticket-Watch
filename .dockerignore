@@ -1,0 +1,9 @@
+node_modules
+dist
+data/*.json
+.env
+.git
+.gitignore
+npm-debug.log*
+playwright-report
+test-results

@@ -1,0 +1,16 @@
+services:
+  ticket-watch:
+    build:
+      context: .
+      args:
+        INSTALL_PLAYWRIGHT: ${INSTALL_PLAYWRIGHT:-false}
+    env_file:
+      - .env
+    ports:
+      - "4000:4000"
+    volumes:
+      - ticket-watch-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  ticket-watch-data:
